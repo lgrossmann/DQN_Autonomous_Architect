@@ -259,16 +259,6 @@ class Block_Construct:
     # https: // stackoverflow.com / questions / 23410161 / pygame - collision - code
 
     def loop(self):
-        # for event in pygame.event.get():
-        #     if event.type == QUIT:
-        #         self.running = False
-        #     elif event.type == KEYDOWN and event.key == K_ESCAPE:
-        #         self.running = False
-        #     elif event.type == KEYDOWN and event.key == K_p:
-        #         pygame.image.save(self.screen, "Auto_Arch2.png")
-        #     elif event.type == KEYDOWN and event.key == K_d:
-        #         self.drawing = not self.drawing
-
         self.iteration_counter += 1
         if self.iteration_counter >= 1000:
             self.Outcome_Stable_Over_Time = True
