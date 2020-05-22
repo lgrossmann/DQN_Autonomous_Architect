@@ -1,7 +1,3 @@
-# TODO: finish by March 7!!!
-# TODO: then I will have 1 week for making a presentation and display board, and practicing speech, questions!!!
-
-
 import pygame
 from pygame.locals import *
 from pygame.color import *
@@ -340,7 +336,6 @@ class Block_Construct:
         return reward
 
 def Evaluate_Build_Plan(state, planet, cost):
-    # TODO: Map the state into a build plan using a "translate" function!!!
     # state is a list with 19 parameters, of integers between -20, +20.
     # every integer indicates a change of the default plan by x*10 units.
     game_over = False
@@ -370,7 +365,6 @@ def Evaluate_Build_Plan(state, planet, cost):
     game_over = standard_plan_build_construct.Outcome_Collision
     #Here the current, tweaked build plan in each episode } learning step, is evaluated and feedbacked to the DQN,
     #that gets the state Q-value and reward from here.
-    #WORK DIRECTLY WITH POLICY
 
     return reward_e, game_over
 
